@@ -1,8 +1,9 @@
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import styles from './style.module.css';
+import ButtonCustom from '../../components/atoms/ButtonCustom';
 
 export default function ConsumtionModeView() {
   //
@@ -24,29 +25,16 @@ export default function ConsumtionModeView() {
       </div>
 
       <div className={styles.buttons}>
-        <Button
-          size='large'
-          variant='contained'
+        <ButtonCustom
+          label='JE COMMANDE'
           onClick={() => handleSelectConsumptionMode(1)}
-          style={{
-            backgroundColor: '#F45F5D',
-            color: '#fff',
-          }}
-        >
-          <LocalDiningIcon fontSize='large' />
-          SUR PLACE
-        </Button>
-        <Button
-          size='large'
-          variant='contained'
+          Icon={LocalMallIcon}
+        />
+        <ButtonCustom
+          label='Á EMPORTER'
           onClick={() => handleSelectConsumptionMode(2)}
-          style={{
-            backgroundColor: '#F45F5D',
-            color: '#fff',
-          }}
-        >
-          <LocalMallIcon fontSize='large' />Á EMPORTER
-        </Button>
+          Icon={LocalDiningIcon}
+        />
       </div>
     </div>
   );

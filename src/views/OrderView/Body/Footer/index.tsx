@@ -3,6 +3,7 @@ import styles from './style.module.css';
 import { useNavigate } from 'react-router-dom';
 import PaymentButton from './PaymentButton';
 import { resetCart } from '../../../../stores/useCartStore';
+import TotalCart from './TotalCart';
 
 export default function Footer() {
   //
@@ -26,6 +27,7 @@ export default function Footer() {
       >
         ANNULER
       </Button>
+      <TotalCart />
       <PaymentButton />
     </div>
   );

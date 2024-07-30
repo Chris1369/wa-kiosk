@@ -10,6 +10,7 @@ export default function EnterNameView() {
   const consumptionMode = params.get('consumptionMode');
   const navigation = useNavigate();
   const [name, setName] = useState('');
+  const isDisabled = name.length <= 2;
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
@@ -37,13 +38,14 @@ export default function EnterNameView() {
           value={name}
         />
         <Button
-          disabled={name.length === 0}
+          disabled={isDisabled}
           size='large'
           variant='contained'
           onClick={handleValidate}
           style={{
             backgroundColor: '#F45F5D',
             color: '#fff',
+            opacity: isDisabled ? 0.5 : 1,
           }}
         >
           <CheckIcon fontSize='large' />

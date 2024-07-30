@@ -1,7 +1,8 @@
-import { Button, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import styles from './style.module.css';
 import logo from '../../assets/images/logo.png';
+import ButtonCustom from '../../components/atoms/ButtonCustom';
 
 export default function HomeView() {
   //
@@ -22,17 +23,7 @@ export default function HomeView() {
           IO Cofee
         </Typography>
       </div>
-      <Button
-        size='large'
-        variant='contained'
-        style={{
-          backgroundColor: '#F45F5D',
-          color: '#fff',
-        }}
-        onClick={handleOrder}
-      >
-        JE COMMANDE
-      </Button>
+      <ButtonCustom label='JE COMMANDE' onClick={handleOrder} />
     </div>
   );
 }

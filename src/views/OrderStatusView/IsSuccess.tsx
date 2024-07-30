@@ -11,9 +11,9 @@ export default function IsSuccess() {
 
   useEffect(() => {
     setTimeout(() => {
-      navigate('/');
       resetCart();
-    }, 5000);
+      navigate('/');
+    }, 4900);
   }, [navigate]);
 
   return (
