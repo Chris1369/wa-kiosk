@@ -1,0 +1,14 @@
+.categoryList {
+  width: 25%;
+  background-color: #fc6b6b71;
+  overflow: scroll;
+}
+
+.category {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fc6b6b;
+  color: white;
+}

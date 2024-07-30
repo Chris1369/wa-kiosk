@@ -1,0 +1,21 @@
+.productList {
+  background-color: #fc6b6b71;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  width: 75%;
+}
+
+.productItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  width: 33.33%;
+  background-color: #fff;
+  flex-direction: column;
+  height: 320px;
+}
+
+.productItem:hover {
+  background-color: #f0f0f0;
+}

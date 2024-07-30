@@ -1,0 +1,14 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  box-shadow: #fc6b6b 0px 0px 15px;
+}
