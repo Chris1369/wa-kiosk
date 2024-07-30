@@ -5,9 +5,3 @@
   flex-direction: column;
   height: 100vh;
 }
-
-.buttons {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-}

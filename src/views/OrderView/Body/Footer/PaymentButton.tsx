@@ -6,7 +6,7 @@ export default function PaymentButton() {
   //
   const navigate = useNavigate();
   const handleOrder = () => {
-    navigate('/order-method-choice');
+    navigate('/order-payment-method-choice');
   };
 
   return (

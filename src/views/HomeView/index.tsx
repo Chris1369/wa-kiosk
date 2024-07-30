@@ -13,12 +13,12 @@ export default function HomeView() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.title}>
+      <div>
         <img src={logo} alt='' />
-        <Typography variant='h1' component='h2'>
+        <Typography variant='h1' component='h2' align='center'>
           Bienvenue au
         </Typography>
-        <Typography variant='h2' component='h2'>
+        <Typography variant='h2' component='h2' align='center'>
           IO Cofee
         </Typography>
       </div>

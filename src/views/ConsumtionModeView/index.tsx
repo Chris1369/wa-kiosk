@@ -14,11 +14,11 @@ export default function ConsumtionModeView() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.title}>
-        <Typography variant='h2' component='h2'>
+      <div>
+        <Typography variant='h2' component='h2' align='center'>
           Selectionnez votre
         </Typography>
-        <Typography variant='h2' component='h2'>
+        <Typography variant='h2' component='h2' align='center'>
           mode de consommation
         </Typography>
       </div>

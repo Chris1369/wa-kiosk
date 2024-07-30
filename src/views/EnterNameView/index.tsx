@@ -23,9 +23,11 @@ export default function EnterNameView() {
 
   return (
     <div className={styles.container}>
-      <Typography variant='h1' component='h2'>
-        Entrez votre nom
-      </Typography>
+      <div>
+        <Typography variant='h2' component='h2' align='center'>
+          Entrez votre nom
+        </Typography>
+      </div>
 
       <div>
         <TextField

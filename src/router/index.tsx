@@ -4,6 +4,8 @@ import EnterNameView from '../views/EnterNameView';
 import ConsumtionModeView from '../views/ConsumtionModeView';
 import OrderView from '../views/OrderView';
 import PaymentMethodChoiceView from '../views/PaymentMethodChoiceView';
+import OrderStatusView from '../views/OrderStatusView';
+import LoadingView from '../views/LoadingView';
 
 const router = createBrowserRouter([
   {
@@ -23,8 +25,16 @@ const router = createBrowserRouter([
     element: <OrderView />,
   },
   {
-    path: '/order-method-choice',
+    path: '/order-payment-method-choice',
     element: <PaymentMethodChoiceView />,
+  },
+  {
+    path: '/payment-credit-card',
+    element: <LoadingView />,
+  },
+  {
+    path: '/order-status',
+    element: <OrderStatusView />,
   },
 ]);
 
