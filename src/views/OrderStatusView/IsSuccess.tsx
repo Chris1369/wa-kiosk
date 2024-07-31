@@ -10,10 +10,10 @@ export default function IsSuccess() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    resetCart();
     setTimeout(() => {
-      resetCart();
       navigate('/');
-    }, 4900);
+    }, 5000);
   }, [navigate]);
 
   return (
