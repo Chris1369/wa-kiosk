@@ -16,7 +16,7 @@ export default function ProductItem({ product }: { product: ProductType }) {
       onClick={handleAddToCart}
     >
       <img src={product.image} width={'90%'} />
-      <Typography variant='h4' component='h4'>
+      <Typography variant='h5' component='h5'>
         {product.name}
       </Typography>
       <Typography variant='h5' component='h5' color='#fc6b6b'>
