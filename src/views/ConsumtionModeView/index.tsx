@@ -26,12 +26,12 @@ export default function ConsumtionModeView() {
 
       <div className={styles.buttons}>
         <ButtonCustom
-          label='JE COMMANDE'
+          label=' SUR PLACE'
           onClick={() => handleSelectConsumptionMode(1)}
           Icon={LocalMallIcon}
         />
         <ButtonCustom
-          label='Á EMPORTER'
+          label=' Á EMPORTER'
           onClick={() => handleSelectConsumptionMode(2)}
           Icon={LocalDiningIcon}
         />

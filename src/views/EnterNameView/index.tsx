@@ -1,8 +1,9 @@
-import { Button, TextField, Typography } from '@mui/material';
+import { TextField, Typography } from '@mui/material';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CheckIcon from '@mui/icons-material/Check';
 import styles from './style.module.css';
+import ButtonCustom from '../../components/atoms/ButtonCustom';
 
 export default function EnterNameView() {
   //
@@ -30,27 +31,23 @@ export default function EnterNameView() {
         </Typography>
       </div>
 
-      <div>
-        <TextField
-          label='Votre petit nom'
-          variant='outlined'
-          onChange={handleChange}
-          value={name}
-        />
-        <Button
-          disabled={isDisabled}
-          size='large'
-          variant='contained'
+      <div className={styles.form}>
+        <div>
+          <TextField
+            label='Votre petit nom'
+            variant='outlined'
+            onChange={handleChange}
+            value={name}
+            margin='normal'
+          />
+        </div>
+
+        <ButtonCustom
+          isDisabled={isDisabled}
+          label='JE VALIDE'
           onClick={handleValidate}
-          style={{
-            backgroundColor: '#F45F5D',
-            color: '#fff',
-            opacity: isDisabled ? 0.5 : 1,
-          }}
-        >
-          <CheckIcon fontSize='large' />
-          JE VALIDE
-        </Button>
+          Icon={CheckIcon}
+        />
       </div>
       <div />
     </div>
